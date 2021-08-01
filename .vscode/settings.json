@@ -1,0 +1,9 @@
+{
+	"vetur.format.options.tabSize": 4,
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": true, 
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+	"typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+	"vue.format.placeOpenBraceOnNewLineForControlBlocks": true,
+	"vue.format.placeOpenBraceOnNewLineForFunctions": true,
+}
