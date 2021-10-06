@@ -13,17 +13,21 @@ import { IShoppingEntry } from "../App.vue";
 
 @Options({
     components: {},
-    props: {
+    props: 
+	{
         modelData: Object,
     },
 })
-export default class Entry extends Vue {
+export default class Entry extends Vue 
+{
     public modelData!: Object;
 
-    public onMouseDown() {
+    public onMouseDown() 
+	{
         console.log("Entry was clicked");
 
         let index = (this.modelData as any).index;
+
         (this.$parent as App).items = (this.$parent as App).items.filter(
             (item: IShoppingEntry) => item.index !== index
         );
@@ -40,20 +44,4 @@ export default class Entry extends Vue {
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.entry {
-    cursor: pointer;
-    padding: 10px 30px;
-    margin: 10px;
-    border-radius: 5px;
-    list-style-type: none;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
-    font-weight: 100;
-}
-
-.entry:hover {
-    border-color: #61dafb;
-}
-</style>
+<style scoped src="./Entry.css"></style>

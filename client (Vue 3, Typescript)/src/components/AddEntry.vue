@@ -52,7 +52,8 @@ export default class AddEntry extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.add-entry {
+.add-entry 
+{
     cursor: pointer;
     padding: 10px 30px;
     margin: 10px;
@@ -64,11 +65,13 @@ export default class AddEntry extends Vue {
     font-weight: 100;
 }
 
-.add-entry:hover {
+.add-entry:hover 
+{
     border-color: #61dafb;
 }
 
-input {
+input 
+{
     /** Needed because padding changes width uncontrollably if this is missing */
     box-sizing: border-box;
     display: block;
